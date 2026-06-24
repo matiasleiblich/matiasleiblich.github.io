@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ing. Matias Leiblich | Asesor Inmobiliario</title>
+<meta name="description" content="Compra, venta, búsqueda de propiedades, análisis de lotes y herramientas inmobiliarias.">
+<style>
+:root{--primary:#0f172a;--accent:#2563eb;--light:#f8fafc;--border:#e2e8f0;--success:#25D366;}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,sans-serif;background:#f4f6f9;color:#1e293b;line-height:1.5}
+.container{width:min(1100px,92%);margin:auto}
+.hero{text-align:center;padding:40px 0 20px}
+.logo{max-width:180px;margin-bottom:20px}
+.profile-pic{width:170px;height:170px;object-fit:cover;border-radius:50%;border:5px solid white;box-shadow:0 10px 30px rgba(0,0,0,.12)}
+h1{margin-top:20px}
+.contact-grid,.cards{display:grid;gap:12px}
+.contact-grid{grid-template-columns:repeat(auto-fit,minmax(140px,1fr));margin-top:30px}
+.contact-btn,.card-action{text-decoration:none;border-radius:12px;text-align:center}
+.contact-btn{background:#fff;border:1px solid var(--border);padding:14px;color:#111}
+.section{margin-top:45px}
+.section-title{text-align:center;margin-bottom:20px}
+.cards{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{background:#fff;padding:22px;border-radius:18px;box-shadow:0 5px 18px rgba(0,0,0,.05)}
+.card-header{display:flex;justify-content:space-between;align-items:center}
+.info-btn{width:34px;height:34px;border:none;border-radius:50%;cursor:pointer}
+.card-action{display:block;margin-top:15px;background:var(--success);padding:12px;color:#fff}
+.feature-card{background:#0f172a;color:#fff}
+.feature-card .card-action{background:#fff;color:#0f172a}
+.footer{text-align:center;padding:50px 0;color:#64748b}
+.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.55);justify-content:center;align-items:center}
+.modal-content{background:#fff;padding:25px;border-radius:18px;max-width:500px}
+</style>
+</head>
+<body>
+<div class="container">
+<section class="hero">
+<img src="Logo IN2.png" class="logo">
+<img src="Fotoportada.jpg" class="profile-pic">
+<h1>Ing. Matias Leiblich</h1>
+<p>Asesor Inmobiliario</p>
+<p>Te acompaño en la compra, venta y análisis de oportunidades inmobiliarias.</p>
+<div class="contact-grid">
+<a class="contact-btn" href="https://wa.me/5491161737552">WhatsApp</a>
+<a class="contact-btn" href="mailto:matiasleiblich@deinmobiliarios.com">Mail</a>
+<a class="contact-btn" href="https://www.instagram.com/tutemudas">Instagram</a>
+<a class="contact-btn" href="https://linkedin.com/in/matias-leiblich">LinkedIn</a>
+<a class="contact-btn" href="https://www.tiktok.com/@tutemudas">TikTok</a>
+</div>
+</section>
+<section class="section">
+<h2 class="section-title">Servicios</h2>
+<div class="cards">
+<div class="card"><div class="card-header"><b>Comprar Propiedad</b><button class="info-btn" onclick="openModal('Encontrá oportunidades alineadas con tus necesidades, presupuesto y objetivos.')">i</button></div><a class="card-action" href="https://wa.me/5491161737552?text=Hola%20Matias,%20quisiera%20recibir%20asesoramiento%20para%20comprar%20una%20propiedad.">Consultar</a></div>
+<div class="card"><div class="card-header"><b>Vender Propiedad</b><button class="info-btn" onclick="openModal('Recibí asesoramiento para posicionar correctamente tu inmueble y maximizar su exposición.')">i</button></div><a class="card-action" href="https://wa.me/5491161737552?text=Hola%20Matias,%20quisiera%20asesoramiento%20para%20vender%20una%20propiedad.">Consultar</a></div>
+<div class="card"><div class="card-header"><b>Búsqueda Personalizada</b><button class="info-btn" onclick="openModal('Recibí acompañamiento profesional de parte de nuestros arquitectos e ingenieros durante todo el proceso de búsqueda.')">i</button></div><a class="card-action" href="https://wa.me/5491161737552?text=Hola%20Matias,%20quisiera%20informacion%20sobre%20el%20servicio%20de%20busqueda%20personalizada.">Consultar</a></div>
+<div class="card"><div class="card-header"><b>Prefactibilidad de Lotes</b><button class="info-btn" onclick="openModal('Evaluación preliminar del potencial constructivo y análisis urbanístico antes de tomar decisiones.')">i</button></div><a class="card-action" href="https://wa.me/5491161737552?text=Hola%20Matias,%20quisiera%20consultar%20por%20un%20analisis%20de%20prefactibilidad%20de%20lote.">Consultar</a></div>
+<div class="card"><div class="card-header"><b>Guías</b><button class="info-btn" onclick="openModal('Recursos prácticos para compradores, vendedores e inversores.')">i</button></div><a class="card-action" href="https://wa.me/5491161737552?text=Hola%20Matias,%20quisiera%20recibir%20informacion%20sobre%20las%20guias%20disponibles.">Consultar</a></div>
+<div class="card feature-card"><b>Calculadora Inmobiliaria</b><p>Analizá propiedades, gastos, rentabilidad y escenarios de inversión en segundos.</p><a class="card-action" href="https://leiblichmatias-arch.github.io/calculadora-inmobiliaria/">Abrir Calculadora</a></div>
+</div>
+</section>
+<section class="section"><div class="card"><h3>📢 Canal de WhatsApp</h3><p>Información de mercado, novedades y oportunidades inmobiliarias.</p><a class="card-action" href="https://whatsapp.com/channel/0029VbBiYGGLCoWvqOOv4y1O">Unirme al Canal</a></div></section>
+</div>
+<div class="modal" id="modal"><div class="modal-content"><p id="modalText"></p><button onclick="closeModal()">Cerrar</button></div></div>
+<script>
+const modal=document.getElementById('modal'),modalText=document.getElementById('modalText');
+function openModal(t){modal.style.display='flex';modalText.textContent=t}
+function closeModal(){modal.style.display='none'}
+</script>
+</body></html>
