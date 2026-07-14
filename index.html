@@ -208,20 +208,19 @@ nav {
 .hero-in2 {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  font-size: 11px;
+  gap: 4px;
+  font-size: 12px;
   color: var(--ml-muted);
-  margin-bottom: 20px;
+  margin-top: 6px;
 }
-.hero-in2-tag {
-  background: var(--ml-bg);
-  border: 1px solid var(--ml-border-dark);
-  color: var(--ml-brand);
-  font-size: 10px;
+.hero-in2-link {
+  font-size: 12px;
   font-weight: 600;
-  letter-spacing: .05em;
-  padding: 3px 8px;
-  border-radius: 5px;
+  color: var(--ml-accent);
+  text-decoration: none;
+}
+.hero-in2-link:hover {
+  color: var(--ml-brand);
 }
 .hero-actions {
   display: flex;
@@ -375,7 +374,7 @@ nav {
 
 /* ─── CTA BLOCK ──────────────────────────────────────────────────────── */
 .cta-block {
-  background: var(--ml-brand);
+  background: #1E538A;
   border-radius: var(--ml-radius-lg);
   padding: 36px 40px;
   text-align: center;
@@ -391,7 +390,7 @@ nav {
 }
 .cta-block p {
   font-size: 14px;
-  color: rgba(255,255,255,.65);
+  color: rgba(255,255,255,.7);
   margin-bottom: 24px;
 }
 .cta-actions {
@@ -482,8 +481,6 @@ footer {
   <div class="nav-inner">
     <div class="nav-brand">
       <img class="nav-logo" src="Logo IN2.png" alt="IN²">
-      <span class="nav-name">Matías Leiblich</span>
-      <span class="nav-in2">IN²</span>
     </div>
     <nav class="nav-links">
       <a class="nav-link" href="#herramientas">Herramientas</a>
@@ -505,12 +502,12 @@ footer {
         <div>
           <h1 class="hero-name">Matías<br>Leiblich</h1>
           <div class="hero-title">Asesor Inmobiliario · CABA y GBA</div>
+          <div class="hero-in2">
+            Asesor en <a class="hero-in2-link" href="https://ingenierosinmobiliarios.com.ar" target="_blank">Ingenieros Inmobiliarios</a>
+          </div>
         </div>
       </div>
-      <p class="hero-desc">Te ayudo a comprar, vender y analizar oportunidades de inversión con criterio técnico y conocimiento del mercado.</p>
-      <div class="hero-in2">
-        Asesor en <span class="hero-in2-tag">Ingenieros Inmobiliarios</span>
-      </div>
+      <p class="hero-desc" style="margin-top:16px">Te ayudo a comprar, vender y analizar oportunidades de inversión con criterio técnico y conocimiento del mercado.</p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="https://wa.me/5491161737552" target="_blank">
           <i class="ti ti-brand-whatsapp"></i>WhatsApp
