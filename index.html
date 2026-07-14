@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-MC47CJF0VL"></script>
 <script>
@@ -11,149 +12,635 @@
   gtag('js', new Date());
   gtag('config', 'G-MC47CJF0VL');
 </script>
-<title>Ing. Matías Leiblich | Real Estate</title>
+
+<title>Matías Leiblich | Ingeniero Inmobiliario</title>
+
 <!-- Open Graph / WhatsApp preview -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://matiasleiblich.com/">
-<meta property="og:title" content="Ing. Matías Leiblich | Real Estate">
-<meta property="og:description" content="Te ayudo a comprar, vender y analizar oportunidades de inversión.">
+<meta property="og:title" content="Matías Leiblich | Ingeniero Inmobiliario">
+<meta property="og:description" content="Te ayudo a comprar, vender y analizar oportunidades de inversión con respaldo técnico.">
 <meta property="og:image" content="https://matiasleiblich.com/preview.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Ing. Matías Leiblich | Real Estate">
-<meta name="twitter:description" content="Te ayudo a comprar, vender y analizar oportunidades de inversión.">
+<meta name="twitter:title" content="Matías Leiblich | Ingeniero Inmobiliario">
+<meta name="twitter:description" content="Te ayudo a comprar, vender y analizar oportunidades de inversión con respaldo técnico.">
 <meta name="twitter:image" content="https://matiasleiblich.com/preview.jpg">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+
 <style>
-:root{
---blue:#1558A8;--blue-light:#E8F0FB;--text:#1A1A2E;--muted:#6B7280;--border:#E5E7EB;
---bg:#F5F7FA;--radius:16px;
+/* ─── SISTEMA DE DISEÑO MATÍAS LEIBLICH ─────────────────────────────── */
+:root {
+  --ml-brand:        #0F3D6B;
+  --ml-brand-light:  #EBF2FB;
+  --ml-brand-mid:    #4A7BAD;
+  --ml-accent:       #C9974A;
+  --ml-accent-light: #FBF3E8;
+  --ml-text:         #1A2535;
+  --ml-text-sub:     #4B5563;
+  --ml-muted:        #9CA3AF;
+  --ml-border:       #E8EDF2;
+  --ml-border-dark:  #D1DAE3;
+  --ml-bg:           #F7F9FC;
+  --ml-surface:      #FFFFFF;
+
+  --ml-font-display: 'DM Sans', sans-serif;
+  --ml-font-body:    'Inter', sans-serif;
+
+  --ml-radius-sm:   8px;
+  --ml-radius-md:   12px;
+  --ml-radius-lg:   16px;
+  --ml-radius-pill: 999px;
+
+  --ml-shadow-card: 0 1px 3px rgba(15,61,107,.06), 0 4px 12px rgba(15,61,107,.04);
+  --ml-shadow-nav:  0 1px 0 var(--ml-border);
 }
-*{box-sizing:border-box}body{margin:0;font-family:Inter,sans-serif;background:var(--bg);color:var(--text)}
-nav{background:#fff;border-bottom:1px solid var(--border);height:64px;display:flex;align-items:center;padding:0 24px}
-nav img{height:42px}
-.page{max-width:960px;margin:auto;padding:32px 20px}
-.hero{display:grid;grid-template-columns:220px 1fr;gap:36px;align-items:center;margin-bottom:32px}
-.hero img{width:200px;height:200px;object-fit:cover;border-radius:999px;box-shadow:0 2px 10px rgba(0,0,0,.05)}
-.badge{display:inline-block;background:var(--blue-light);color:var(--blue);padding:6px 12px;border-radius:10px;font-size:12px}
-h1{font-size:32px;margin:10px 0 6px}.sub{color:var(--muted);font-size:15px;margin-bottom:16px}
-.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
-.btn{padding:0 16px;height:46px;display:inline-flex;align-items:center;justify-content:center;border-radius:10px;text-decoration:none;font-weight:600}
-.primary{background:var(--blue);color:#fff}.secondary{background:#fff;color:var(--blue);border:1px solid var(--blue)}
-h2{margin:28px 0 14px}
-.grid2,.grid4{display:grid;gap:16px}
-.grid2{grid-template-columns:repeat(2,1fr)}
-.grid4{grid-template-columns:repeat(2,1fr)}
-# Added hover
-.card:hover{transform:translateY(-3px);box-shadow:0 2px 10px rgba(0,0,0,.05)}
-.card{background:#fff;border:1px solid var(--border);border-radius:16px;padding:20px;box-shadow:0 1px 6px rgba(0,0,0,.04);transition:.18s ease}
-.icon{width:44px;height:44px;background:var(--blue-light);border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--blue);;margin-bottom:14px}
-.link{color:var(--blue);font-weight:600;text-decoration:none}
-.cta{background:#fff;border:1px solid var(--border);border-radius:16px;padding:20px;margin-top:40px;text-align:center}
-footer{margin-top:40px;padding-top:24px;border-top:1px solid var(--border);text-align:center;color:var(--muted)}
-@media(max-width:700px){.hero{grid-template-columns:1fr;text-align:center}.hero img{margin:auto}.actions{justify-content:center}.grid2,.grid4{grid-template-columns:1fr}}
-p{font-size:14px;line-height:1.5}h3{font-size:15px;font-weight:600;margin:0 0 8px}.btn{font-size:14px}h2{font-size:24px}
 
-.link-icon{display:inline-flex;align-items:center;gap:8px;margin-top:6px}
-.link-stack{display:flex;flex-direction:column;gap:10px;margin-top:8px}
-.link-icon svg{width:18px;height:18px;flex:0 0 18px}
+/* ─── RESET & BASE ───────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: var(--ml-font-body);
+  background: var(--ml-bg);
+  color: var(--ml-text);
+  -webkit-font-smoothing: antialiased;
+}
+a { text-decoration: none; }
+p { margin: 0; }
 
+/* ─── NAVBAR ─────────────────────────────────────────────────────────── */
+nav {
+  background: var(--ml-surface);
+  border-bottom: 1px solid var(--ml-border);
+  height: 62px;
+  display: flex;
+  align-items: center;
+  padding: 0 28px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.nav-inner {
+  max-width: 960px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.nav-logo { height: 36px; }
+.nav-name {
+  font-family: var(--ml-font-display);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--ml-text);
+  letter-spacing: -.02em;
+}
+.nav-in2 {
+  background: var(--ml-brand);
+  color: #fff;
+  font-family: var(--ml-font-display);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  padding: 3px 7px;
+  border-radius: 5px;
+}
+.nav-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.nav-link {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ml-text-sub);
+  transition: color .15s;
+}
+.nav-link:hover { color: var(--ml-brand); }
 
-.icon i{font-size:22px}
-.link-icon i{font-size:18px;margin-right:8px}
-.btn i{font-size:18px;margin-right:8px}
+/* ─── PAGE LAYOUT ────────────────────────────────────────────────────── */
+.page {
+  max-width: 960px;
+  margin: auto;
+  padding: 40px 20px 60px;
+}
 
+/* ─── HERO ───────────────────────────────────────────────────────────── */
+.hero {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 48px;
+  background: var(--ml-surface);
+  border: 1px solid var(--ml-border);
+  border-radius: var(--ml-radius-lg);
+  padding: 36px 40px;
+  box-shadow: var(--ml-shadow-card);
+}
+.hero-photo {
+  width: 176px;
+  height: 176px;
+  border-radius: var(--ml-radius-pill);
+  object-fit: cover;
+  border: 3px solid var(--ml-border);
+}
+.hero-content {}
+
+.hero-eyebrow {
+  font-family: var(--ml-font-display);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--ml-accent);
+  margin-bottom: 12px;
+}
+.hero-signature {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.signature-bar {
+  width: 3px;
+  height: 60px;
+  background: var(--ml-accent);
+  border-radius: 2px;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+.hero-name {
+  font-family: var(--ml-font-display);
+  font-size: 34px;
+  font-weight: 700;
+  color: var(--ml-text);
+  letter-spacing: -.03em;
+  line-height: 1.05;
+  margin: 0;
+}
+.hero-title {
+  font-family: var(--ml-font-display);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ml-text-sub);
+  margin-top: 6px;
+}
+.hero-desc {
+  font-size: 14px;
+  color: var(--ml-text-sub);
+  line-height: 1.6;
+  margin-bottom: 20px;
+  max-width: 400px;
+}
+.hero-in2 {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  color: var(--ml-muted);
+  margin-bottom: 20px;
+}
+.hero-in2-tag {
+  background: var(--ml-bg);
+  border: 1px solid var(--ml-border-dark);
+  color: var(--ml-brand);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: .05em;
+  padding: 3px 8px;
+  border-radius: 5px;
+}
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* ─── BUTTONS ────────────────────────────────────────────────────────── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 18px;
+  height: 42px;
+  border-radius: var(--ml-radius-sm);
+  font-family: var(--ml-font-body);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: opacity .15s, transform .1s;
+}
+.btn:hover { opacity: .88; }
+.btn:active { transform: scale(.98); }
+.btn i { font-size: 17px; }
+
+.btn-primary {
+  background: var(--ml-brand);
+  color: #fff;
+}
+.btn-accent {
+  background: var(--ml-accent);
+  color: #fff;
+}
+.btn-secondary {
+  background: var(--ml-surface);
+  color: var(--ml-brand);
+  border: 1.5px solid var(--ml-brand);
+}
+.btn-ghost {
+  background: var(--ml-surface);
+  color: var(--ml-text-sub);
+  border: 1.5px solid var(--ml-border-dark);
+}
+
+/* ─── SECTION HEADINGS ───────────────────────────────────────────────── */
+.section-heading {
+  font-family: var(--ml-font-display);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--ml-text);
+  letter-spacing: -.02em;
+  margin: 0 0 16px;
+}
+.section-wrap { margin-bottom: 32px; }
+
+/* ─── CARDS ──────────────────────────────────────────────────────────── */
+.card {
+  background: var(--ml-surface);
+  border: 1px solid var(--ml-border);
+  border-radius: var(--ml-radius-lg);
+  padding: 22px;
+  box-shadow: var(--ml-shadow-card);
+  transition: transform .18s, box-shadow .18s;
+}
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(15,61,107,.10);
+}
+.card-icon {
+  width: 42px;
+  height: 42px;
+  background: var(--ml-brand-light);
+  border-radius: var(--ml-radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ml-brand);
+  font-size: 22px;
+  margin-bottom: 14px;
+}
+.card h3 {
+  font-family: var(--ml-font-display);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--ml-text);
+  margin: 0 0 6px;
+}
+.card p {
+  font-size: 13px;
+  color: var(--ml-text-sub);
+  line-height: 1.55;
+}
+.card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 12px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ml-brand);
+}
+.card-link:hover { color: var(--ml-accent); }
+
+/* Tool cards get an accent top border */
+.card-tool {
+  border-top: 3px solid var(--ml-brand);
+}
+
+/* ─── GRIDS ──────────────────────────────────────────────────────────── */
+.grid2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.grid4 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+
+/* ─── LINK LIST ──────────────────────────────────────────────────────── */
+.link-stack { display: flex; flex-direction: column; gap: 8px; margin-top: 10px; }
+.link-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ml-brand);
+}
+.link-item i { font-size: 16px; }
+.link-item:hover { color: var(--ml-accent); }
+
+/* ─── ABOUT ──────────────────────────────────────────────────────────── */
+.about-card {
+  background: var(--ml-surface);
+  border: 1px solid var(--ml-border);
+  border-radius: var(--ml-radius-lg);
+  padding: 24px 28px;
+  box-shadow: var(--ml-shadow-card);
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+.about-bar {
+  width: 3px;
+  min-height: 100%;
+  background: linear-gradient(to bottom, var(--ml-accent), var(--ml-brand));
+  border-radius: 2px;
+  flex-shrink: 0;
+  align-self: stretch;
+}
+.about-card p {
+  font-size: 14px;
+  color: var(--ml-text-sub);
+  line-height: 1.7;
+}
+
+/* ─── CTA BLOCK ──────────────────────────────────────────────────────── */
+.cta-block {
+  background: var(--ml-brand);
+  border-radius: var(--ml-radius-lg);
+  padding: 36px 40px;
+  text-align: center;
+  margin-top: 40px;
+}
+.cta-block h2 {
+  font-family: var(--ml-font-display);
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -.02em;
+  margin: 0 0 6px;
+}
+.cta-block p {
+  font-size: 14px;
+  color: rgba(255,255,255,.65);
+  margin-bottom: 24px;
+}
+.cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+.cta-block .btn-wpp {
+  background: #25D366;
+  color: #fff;
+}
+.cta-block .btn-outline {
+  background: transparent;
+  color: #fff;
+  border: 1.5px solid rgba(255,255,255,.35);
+}
+.cta-block .btn-outline:hover { border-color: rgba(255,255,255,.7); }
+
+/* ─── FOOTER ─────────────────────────────────────────────────────────── */
+footer {
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid var(--ml-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.footer-brand {
+  font-family: var(--ml-font-display);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ml-text);
+}
+.footer-in2 {
+  font-size: 11px;
+  color: var(--ml-muted);
+  margin-top: 2px;
+  letter-spacing: .04em;
+}
+.footer-links {
+  display: flex;
+  gap: 16px;
+}
+.footer-link {
+  font-size: 12px;
+  color: var(--ml-muted);
+  font-weight: 500;
+}
+.footer-link:hover { color: var(--ml-brand); }
+
+/* ─── RESPONSIVE ─────────────────────────────────────────────────────── */
+@media (max-width: 680px) {
+  nav { padding: 0 18px; }
+  .nav-links { display: none; }
+  .page { padding: 28px 16px 48px; }
+
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 28px 24px;
+    gap: 24px;
+  }
+  .hero-photo { margin: auto; width: 140px; height: 140px; }
+  .hero-signature { justify-content: center; }
+  .hero-desc { max-width: 100%; }
+  .hero-in2 { justify-content: center; }
+  .hero-actions { justify-content: center; }
+
+  .grid2, .grid4 { grid-template-columns: 1fr; }
+
+  .about-card { flex-direction: column; }
+  .about-bar { width: 100%; height: 3px; min-height: unset; }
+
+  .cta-block { padding: 28px 20px; }
+  .cta-block h2 { font-size: 20px; }
+
+  footer { flex-direction: column; align-items: flex-start; }
+}
 </style>
 </head>
 <body>
-<nav><img src="Logo IN2.png" alt="IN2"></nav>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="nav-inner">
+    <div class="nav-brand">
+      <img class="nav-logo" src="Logo IN2.png" alt="IN²">
+      <span class="nav-name">Matías Leiblich</span>
+      <span class="nav-in2">IN²</span>
+    </div>
+    <nav class="nav-links">
+      <a class="nav-link" href="#herramientas">Herramientas</a>
+      <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+      <a class="nav-link" href="https://wa.me/5491161737552" target="_blank">Contacto</a>
+    </nav>
+  </div>
+</nav>
+
 <div class="page">
 
-<section class="hero">
-<img src="Fotoportada.jpg" alt="Matías Leiblich">
-<div>
-<h1>Matías Leiblich</h1>
-<div class="sub">Ingeniero Civil</div>
-<p>Te ayudo a comprar, vender y analizar oportunidades de inversión.</p>
-<div class="actions">
-<a class="btn primary" href="https://wa.me/5491161737552" target="_blank"><i class="ti ti-brand-whatsapp"></i>WhatsApp</a>
-<a class="btn secondary" href="mailto:matiasleiblich@deinmobiliarios.com"><i class="ti ti-mail"></i>Mail</a>
-<a class="btn secondary" href="https://linkedin.com/in/matias-leiblich" target="_blank"><i class="ti ti-brand-linkedin"></i>LinkedIn</a>
-<a class="btn secondary" href="https://www.instagram.com/tutemudas" target="_blank"><i class="ti ti-brand-instagram"></i>Instagram</a>
-</div>
-</div>
-</section>
+  <!-- HERO -->
+  <section class="hero">
+    <img class="hero-photo" src="Fotoportada.jpg" alt="Matías Leiblich">
+    <div class="hero-content">
+      <div class="hero-eyebrow">Ingeniero Civil · Real Estate</div>
+      <div class="hero-signature">
+        <div class="signature-bar"></div>
+        <div>
+          <h1 class="hero-name">Matías<br>Leiblich</h1>
+          <div class="hero-title">Asesor Inmobiliario · CABA y GBA</div>
+        </div>
+      </div>
+      <p class="hero-desc">Te ayudo a comprar, vender y analizar oportunidades de inversión con criterio técnico y conocimiento del mercado.</p>
+      <div class="hero-in2">
+        Asesor en <span class="hero-in2-tag">Ingenieros Inmobiliarios</span>
+      </div>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://wa.me/5491161737552" target="_blank">
+          <i class="ti ti-brand-whatsapp"></i>WhatsApp
+        </a>
+        <a class="btn btn-ghost" href="mailto:matiasleiblich@deinmobiliarios.com">
+          <i class="ti ti-mail"></i>Mail
+        </a>
+        <a class="btn btn-ghost" href="https://linkedin.com/in/matias-leiblich" target="_blank">
+          <i class="ti ti-brand-linkedin"></i>LinkedIn
+        </a>
+        <a class="btn btn-ghost" href="https://www.instagram.com/tutemudas" target="_blank">
+          <i class="ti ti-brand-instagram"></i>Instagram
+        </a>
+      </div>
+    </div>
+  </section>
 
-<h2>Herramientas</h2>
-<div class="grid2">
-<div class="card">
-<div class="icon"><i class="ti ti-calculator"></i></div>
-<h3>Calculadora Inmobiliaria</h3>
-<p>Calculá los gastos a la hora de comprar y vender tu propiedad.</p>
-<p><a class="link" href="https://matiasleiblich.github.io/calculadora-inmobiliaria/" target="_blank">Abrir herramienta →</a></p>
-</div>
-<div class="card">
-<div class="icon"><i class="ti ti-building-estate"></i></div>
-<h3>Cartera de Propiedades</h3>
-<p>Encontrá oportunidades y explorá las propiedades disponibles.</p>
-<p><a class="link" href="https://matiasleiblich.github.io/cartera/" target="_blank">Ver propiedades →</a></p>
-</div>
-</div>
+  <!-- HERRAMIENTAS -->
+  <div class="section-wrap" id="herramientas">
+    <div class="section-heading">Herramientas</div>
+    <div class="grid2">
+      <div class="card card-tool">
+        <div class="card-icon"><i class="ti ti-calculator"></i></div>
+        <h3>Calculadora Inmobiliaria</h3>
+        <p>Calculá los gastos de compra y venta de tu propiedad en CABA y Provincia de Buenos Aires.</p>
+        <a class="card-link" href="https://matiasleiblich.com/calculadora-inmobiliaria" target="_blank">
+          Abrir herramienta <i class="ti ti-arrow-right"></i>
+        </a>
+      </div>
+      <div class="card card-tool">
+        <div class="card-icon"><i class="ti ti-building-estate"></i></div>
+        <h3>Cartera de Propiedades</h3>
+        <p>Explorá las propiedades disponibles, reservadas y vendidas con toda la información de cada una.</p>
+        <a class="card-link" href="https://matiasleiblich.com/cartera" target="_blank">
+          Ver propiedades <i class="ti ti-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
 
-<h2>Sobre mí</h2>
-<div class="card">
-<p>Soy Ingeniero Civil graduado en la Universidad de Buenos Aires y asesor comercial en Ingenieros Inmobiliarios. Mi enfoque combina el análisis técnico de cada inmueble con el estudio de las condiciones actuales del mercado, permitiendo elaborar valuaciones objetivas y fundamentadas. Cada tasación se realiza considerando las características particulares de la propiedad, los antecedentes de operaciones comparables y la dinámica vigente de la oferta y la demanda.</p>
-</div>
+  <!-- SOBRE MÍ -->
+  <div class="section-wrap" id="sobre-mi">
+    <div class="section-heading">Sobre mí</div>
+    <div class="about-card">
+      <div class="about-bar"></div>
+      <p>Soy Ingeniero Civil graduado en la Universidad de Buenos Aires y asesor comercial en Ingenieros Inmobiliarios. Mi enfoque combina el análisis técnico de cada inmueble con el estudio de las condiciones actuales del mercado, permitiendo elaborar valuaciones objetivas y fundamentadas. Cada tasación se realiza considerando las características particulares de la propiedad, los antecedentes de operaciones comparables y la dinámica vigente de la oferta y la demanda.</p>
+    </div>
+  </div>
 
-<h2>¿Cómo puedo ayudarte?</h2>
-<div class="grid4">
-<div class="card">
-<div class="icon"><i class="ti ti-message-circle"></i></div>
-<h3>¿Necesitás ayuda con tu operación?</h3>
-<p>¡Nosotros te ayudamos!</p>
-<div class="link-stack">
-<a class="link link-icon" href="https://wa.me/5491161737552?text=Hola%20Matias.%20Utilice%20la%20Calculadora%20de%20Compra%20y%20quisiera%20recibir%20asesoramiento%20para%20analizar%20una%20operacion." target="_blank"><i class="ti ti-home"></i>Quiero Comprar</a>
-<a class="link link-icon" href="https://wa.me/5491161737552?text=Hola%20Matias.%20Utilice%20la%20Calculadora%20de%20Venta%20y%20quisiera%20recibir%20asesoramiento%20para%20analizar%20la%20venta%20de%20una%20propiedad." target="_blank"><i class="ti ti-coins"></i>Quiero Vender</a>
-</div>
-</div>
+  <!-- CÓMO PUEDO AYUDARTE -->
+  <div class="section-wrap">
+    <div class="section-heading">¿Cómo puedo ayudarte?</div>
+    <div class="grid4">
 
-<div class="card">
-<div class="icon"><i class="ti ti-search"></i></div>
-<h3>¿Estás buscando tu próxima propiedad?</h3>
-<p>Recibí acompañamiento profesional de parte de nuestros arquitectos e ingenieros durante todo el proceso de búsqueda.</p>
-<p><a class="link link-icon" href="https://wa.me/5491161737552?text=Hola%20Matias.%20Estoy%20buscando%20una%20propiedad%20y%20quisiera%20recibir%20asesoramiento." target="_blank"><i class="ti ti-search"></i>Quiero recibir asesoramiento</a></p>
-</div>
+      <div class="card">
+        <div class="card-icon"><i class="ti ti-message-circle"></i></div>
+        <h3>¿Necesitás ayuda con tu operación?</h3>
+        <p>Asesoramiento personalizado para compradores y vendedores.</p>
+        <div class="link-stack">
+          <a class="link-item" href="https://wa.me/5491161737552?text=Hola%20Matias.%20Utilice%20la%20Calculadora%20de%20Compra%20y%20quisiera%20recibir%20asesoramiento%20para%20analizar%20una%20operacion." target="_blank">
+            <i class="ti ti-home"></i>Quiero comprar
+          </a>
+          <a class="link-item" href="https://wa.me/5491161737552?text=Hola%20Matias.%20Utilice%20la%20Calculadora%20de%20Venta%20y%20quisiera%20recibir%20asesoramiento%20para%20analizar%20la%20venta%20de%20una%20propiedad." target="_blank">
+            <i class="ti ti-coins"></i>Quiero vender
+          </a>
+        </div>
+      </div>
 
-<div class="card">
-<div class="icon"><i class="ti ti-books"></i></div>
-<h3>Guías gratuitas</h3>
-<p>Descargá nuestras guías inmobiliarias y material informativo para compradores, vendedores e inversores.</p>
-<p><a class="link link-icon" href="https://drive.google.com/drive/folders/1el9JGp-ROZrFCmeo2ruf0rJneN-WWf4z?usp=sharing" target="_blank"><i class="ti ti-books"></i>Ver biblioteca</a></p>
-</div>
+      <div class="card">
+        <div class="card-icon"><i class="ti ti-search"></i></div>
+        <h3>¿Estás buscando tu próxima propiedad?</h3>
+        <p>Acompañamiento profesional de arquitectos e ingenieros durante todo el proceso de búsqueda.</p>
+        <a class="link-item" style="margin-top:10px" href="https://wa.me/5491161737552?text=Hola%20Matias.%20Estoy%20buscando%20una%20propiedad%20y%20quisiera%20recibir%20asesoramiento." target="_blank">
+          <i class="ti ti-search"></i>Recibir asesoramiento
+        </a>
+      </div>
 
-<div class="card">
-<div class="icon"><i class="ti ti-ruler-measure"></i></div>
-<h3>¿Qué hacer con mi lote?</h3>
-<p>Analizamos indicadores urbanísticos y potencial constructivo para inversión.</p>
-<p><a class="link link-icon" href="https://wa.me/5491161737552?text=Hola%20Matias.%20Quisiera%20consultar%20por%20un%20analisis%20de%20prefactibilidad%20para%20un%20lote." target="_blank"><i class="ti ti-ruler-measure"></i>Solicitar análisis de prefactibilidad</a></p>
-</div>
-</div>
+      <div class="card">
+        <div class="card-icon"><i class="ti ti-books"></i></div>
+        <h3>Guías gratuitas</h3>
+        <p>Material informativo para compradores, vendedores e inversores. Descargá y aprendé a tu ritmo.</p>
+        <a class="link-item" style="margin-top:10px" href="https://drive.google.com/drive/folders/1el9JGp-ROZrFCmeo2ruf0rJneN-WWf4z?usp=sharing" target="_blank">
+          <i class="ti ti-books"></i>Ver biblioteca
+        </a>
+      </div>
 
-<div class="cta">
-<h2>¿Hablamos?</h2>
-<div class="actions" style="justify-content:center">
-<a class="btn primary" href="https://wa.me/5491161737552" target="_blank"><i class="ti ti-brand-whatsapp"></i>WhatsApp</a>
-<a class="btn secondary" href="https://whatsapp.com/channel/0029VbBiYGGLCoWvqOOv4y1O" target="_blank"><i class="ti ti-brand-whatsapp"></i>Canal WPP</a>
-<a class="btn secondary" href="https://wa.me/5491161737552?text=Hola%20Matias.%20Quisiera%20que%20coordinemos%20una%20reuni%C3%B3n" target="_blank"><i class="ti ti-calendar-event"></i>Agendar reunión</a>
-<a class="btn secondary" href="matias-leiblich.vcf"><i class="ti ti-id"></i>Guardar mi contacto</a>
-</div>
-</div>
+      <div class="card">
+        <div class="card-icon"><i class="ti ti-ruler-measure"></i></div>
+        <h3>¿Qué hacer con mi lote?</h3>
+        <p>Analizamos indicadores urbanísticos y potencial constructivo para proyectos de inversión.</p>
+        <a class="link-item" style="margin-top:10px" href="https://wa.me/5491161737552?text=Hola%20Matias.%20Quisiera%20consultar%20por%20un%20analisis%20de%20prefactibilidad%20para%20un%20lote." target="_blank">
+          <i class="ti ti-ruler-measure"></i>Solicitar análisis
+        </a>
+      </div>
 
-<footer>© IN² Platform · Matías Leiblich</footer>
+    </div>
+  </div>
+
+  <!-- CTA BLOCK -->
+  <div class="cta-block">
+    <h2>¿Hablamos?</h2>
+    <p>Contame en qué etapa estás y te oriento sin compromiso.</p>
+    <div class="cta-actions">
+      <a class="btn btn-wpp" href="https://wa.me/5491161737552" target="_blank">
+        <i class="ti ti-brand-whatsapp"></i>WhatsApp
+      </a>
+      <a class="btn btn-outline" href="https://whatsapp.com/channel/0029VbBiYGGLCoWvqOOv4y1O" target="_blank">
+        <i class="ti ti-brand-whatsapp"></i>Canal de WhatsApp
+      </a>
+      <a class="btn btn-outline" href="https://wa.me/5491161737552?text=Hola%20Matias.%20Quisiera%20que%20coordinemos%20una%20reuni%C3%B3n" target="_blank">
+        <i class="ti ti-calendar-event"></i>Agendar reunión
+      </a>
+      <a class="btn btn-outline" href="matias-leiblich.vcf">
+        <i class="ti ti-id"></i>Guardar contacto
+      </a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div>
+      <div class="footer-brand">Matías Leiblich</div>
+      <div class="footer-in2">Ingenieros Inmobiliarios · IN² Platform</div>
+    </div>
+    <div class="footer-links">
+      <a class="footer-link" href="https://www.instagram.com/tutemudas" target="_blank">Instagram</a>
+      <a class="footer-link" href="https://linkedin.com/in/matias-leiblich" target="_blank">LinkedIn</a>
+      <a class="footer-link" href="https://wa.me/5491161737552" target="_blank">WhatsApp</a>
+    </div>
+  </footer>
 
 </div>
 </body>
