@@ -170,17 +170,20 @@ nav {
 }
 .hero-signature {
   display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  margin-bottom: 12px;
+  align-items: stretch;
+  gap: 14px;
+  margin-bottom: 20px;
 }
 .signature-bar {
   width: 3px;
-  height: 60px;
   background: var(--ml-accent);
   border-radius: 2px;
   flex-shrink: 0;
-  margin-top: 4px;
+}
+.hero-sig-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
 }
 .hero-name {
   font-family: var(--ml-font-display);
@@ -189,20 +192,20 @@ nav {
   color: var(--ml-text);
   letter-spacing: -.03em;
   line-height: 1.05;
-  margin: 0;
+  margin: 0 0 6px;
 }
 .hero-title {
   font-family: var(--ml-font-display);
   font-size: 14px;
   font-weight: 500;
   color: var(--ml-text-sub);
-  margin-top: 6px;
+  margin: 0 0 12px;
 }
 .hero-desc {
   font-size: 14px;
   color: var(--ml-text-sub);
   line-height: 1.6;
-  margin-bottom: 20px;
+  margin: 0 0 12px;
   max-width: 400px;
 }
 .hero-in2 {
@@ -325,8 +328,13 @@ nav {
 }
 .card-link:hover { color: var(--ml-accent); }
 
-/* Tool cards get an accent top border */
+/* Herramientas: borde superior dorado */
 .card-tool {
+  border-top: 3px solid var(--ml-accent);
+}
+
+/* Cards de ayuda: borde superior azul */
+.card-help {
   border-top: 3px solid var(--ml-brand);
 }
 
@@ -374,7 +382,7 @@ nav {
 
 /* ─── CTA BLOCK ──────────────────────────────────────────────────────── */
 .cta-block {
-  background: #1E538A;
+  background: #2C3340;
   border-radius: var(--ml-radius-lg);
   padding: 36px 40px;
   text-align: center;
@@ -390,7 +398,7 @@ nav {
 }
 .cta-block p {
   font-size: 14px;
-  color: rgba(255,255,255,.7);
+  color: rgba(255,255,255,.6);
   margin-bottom: 24px;
 }
 .cta-actions {
@@ -499,15 +507,15 @@ footer {
       <div class="hero-eyebrow">Ingeniero Civil · Real Estate</div>
       <div class="hero-signature">
         <div class="signature-bar"></div>
-        <div>
+        <div class="hero-sig-content">
           <h1 class="hero-name">Matías<br>Leiblich</h1>
           <div class="hero-title">Asesor Inmobiliario · CABA y GBA</div>
+          <p class="hero-desc">Te ayudo a comprar, vender y analizar oportunidades de inversión con criterio técnico y conocimiento del mercado.</p>
           <div class="hero-in2">
             Asesor en <a class="hero-in2-link" href="https://ingenierosinmobiliarios.com.ar" target="_blank">Ingenieros Inmobiliarios</a>
           </div>
         </div>
       </div>
-      <p class="hero-desc" style="margin-top:16px">Te ayudo a comprar, vender y analizar oportunidades de inversión con criterio técnico y conocimiento del mercado.</p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="https://wa.me/5491161737552" target="_blank">
           <i class="ti ti-brand-whatsapp"></i>WhatsApp
@@ -562,7 +570,7 @@ footer {
     <div class="section-heading">¿Cómo puedo ayudarte?</div>
     <div class="grid4">
 
-      <div class="card">
+      <div class="card card-help">
         <div class="card-icon"><i class="ti ti-message-circle"></i></div>
         <h3>¿Necesitás ayuda con tu operación?</h3>
         <p>Asesoramiento personalizado para compradores y vendedores.</p>
@@ -576,7 +584,7 @@ footer {
         </div>
       </div>
 
-      <div class="card">
+      <div class="card card-help">
         <div class="card-icon"><i class="ti ti-search"></i></div>
         <h3>¿Estás buscando tu próxima propiedad?</h3>
         <p>Acompañamiento profesional de arquitectos e ingenieros durante todo el proceso de búsqueda.</p>
@@ -585,7 +593,7 @@ footer {
         </a>
       </div>
 
-      <div class="card">
+      <div class="card card-help">
         <div class="card-icon"><i class="ti ti-books"></i></div>
         <h3>Guías gratuitas</h3>
         <p>Material informativo para compradores, vendedores e inversores. Descargá y aprendé a tu ritmo.</p>
@@ -594,7 +602,7 @@ footer {
         </a>
       </div>
 
-      <div class="card">
+      <div class="card card-help">
         <div class="card-icon"><i class="ti ti-ruler-measure"></i></div>
         <h3>¿Qué hacer con mi lote?</h3>
         <p>Analizamos indicadores urbanísticos y potencial constructivo para proyectos de inversión.</p>
